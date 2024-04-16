@@ -25,6 +25,15 @@ body{
 	 -webkit-animation: moving 1.5s;
 }
 
+#clock{
+	position: absolute;
+	right: 10px;
+}
+
+#clock:hover{
+	cursor: pointer;
+}
+
 @-webkit-keyframes moving {
     from {top: 0px;}
     to {top: 15%;}
@@ -124,10 +133,9 @@ body{
 }
 
 #question, #returnUI{
-	font-size: 25px;
-	position: relative;
-	top: 1%;
-	width: 20px;
+	position:absolute;
+	top: -8%;
+	left: 2%;
 }
 
 #tutorialScreen, #failScreen, #victoryScreen{

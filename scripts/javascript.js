@@ -492,5 +492,8 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-
+// Change background
+clock.addEventListener('click', function() {
+    document.body.style.backgroundImage = "url(../photos/background3.png)";
+});
 
