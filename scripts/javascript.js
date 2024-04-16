@@ -492,8 +492,22 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// Change background
+//odzadje jeeejjj
+//back1 je zora? back2 je  noc back3 je DAN 
+var backgrounds = ["../photos/background1.png", "../photos/background2.png", "../photos/background3.png"];
+var currentIndex = 0;
+var title = document.getElementById("title");
 clock.addEventListener('click', function() {
-    document.body.style.backgroundImage = "url(../photos/background3.png)";
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+    
+    var currentBackground = backgrounds[currentIndex];
+    
+	if(currentBackground!=backgrounds[2]){
+		title.style.color = "white";
+	}else{
+		title.style.color = "#2774a3";
+	}
+
+    document.body.style.backgroundImage = "url(" + currentBackground + ")";
 });
 
